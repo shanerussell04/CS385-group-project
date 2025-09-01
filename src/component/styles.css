@@ -1,0 +1,250 @@
+/* Light Theme */
+body.light {
+  background-color: #ffffff; /* Set background color to white for light theme */
+  color: #000000; /* Set text color to black for light theme */
+}
+
+.settings-container.light,
+.receipts-container.light {
+  background-color: #f9f9f9; /* Set background color to a light grey for settings and receipts containers */
+  border: 1px solid #ddd; /* Add a light grey border to containers */
+  border-radius: 8px; /* Apply rounded corners to containers */
+  padding: 20px; /* Add padding inside the containers */
+}
+
+/* Dark Theme */
+body.dark {
+  background-color: #121212; /* Set background color to dark for dark theme */
+  color: #ffffff; /* Set text color to white for dark theme */
+}
+
+body.dark .settings-container,
+body.dark .receipts-container {
+  border: 1px solid #333; /* Darken the border for the containers in dark theme */
+  padding: 20px; /* Keep the padding same as in the light theme */
+}
+
+/* General Input, Select, and B+++++utton Styles (For both Receipts and Settings) */
+input,
+select,
+button {
+  width: 100%; /* Set width to 100% for full-width input, select, and button elements */
+  padding: 8px; /* Add padding for input, select, and button for better spacing */
+  margin-top: 5px; /* Add margin on top for spacing between elements */
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width */
+  border-radius: 4px; /* Apply rounded corners to input, select, and button elements */
+  border: 1px solid #ccc; /* Light grey border for input, select, and button */
+  background-color: #f9f9f9; /* Light background color for inputs, selects, and buttons */
+  color: #333; /* Set text color to dark grey */
+}
+
+input:focus,
+select:focus,
+button:focus {
+  border-color: #007bff; /* Change border color to blue when the element is focused */
+  outline: none; /* Remove the default focus outline */
+  background-color: #fff; /* Set background color to white when focused */
+}
+
+button {
+  cursor: pointer; /* Set cursor to pointer to indicate it's clickable */
+  background-color: #007bff; /* Set background color to blue for the button */
+  color: #fff; /* Set text color to white for the button */
+  border: none; /* Remove the border from the button */
+  padding: 10px 20px; /* Add padding for spacing inside the button */
+  font-size: 16px; /* Set font size for the button text */
+  font-weight: bold; /* Set font weight to bold for emphasis */
+  border-radius: 8px; /* Apply rounded corners to the button */
+  transition: background-color 0.3s ease; /* Smooth transition for background color on hover */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darken the background color when the button is hovered */
+}
+
+/* Receipts Section */
+.receipts-container {
+  padding: 10px; /* Add padding around the container for spacing */
+  text-align: center; /* Center-align the text within the container */
+  width: 100%; /* Set width to 100% to fill the available space */
+  max-width: 100%; /* Ensure that the container does not exceed 100% width */
+}
+
+.add-receipt-form {
+  margin: 0 auto; /* Center the form horizontally */
+  width: 50%; /* Set the form width to 50% of its container */
+  padding: 20px; /* Add padding inside the form for spacing */
+  text-align: center; /* Center-align the text inside the form */
+  margin-bottom: 30px; /* Add margin at the bottom of the form for spacing */
+  display: flex; /* Use flexbox layout for easy alignment of form elements */
+  flex-direction: column; /* Arrange form elements vertically */
+  align-items: center; /* Center the items (form fields) horizontally */
+}
+
+.receipts-table {
+  width: 100%; /* Set table width to 100% to fill the container */
+  border-collapse: collapse; /* Collapse table borders to make them look cleaner */
+  margin-top: 20px; /* Add margin at the top of the table for spacing */
+  text-align: center; /* Center-align the text in the table */
+  margin: 0 auto; /* Center the table horizontally */
+}
+.receipts-table td {
+  background-color: #333333; /* Set dark background color for data cells */
+  color: #ffffff; /* Set text color inside the data cells to white for readability */
+}
+
+.receipts-table th,
+.receipts-table td {
+  padding: 10px; /* Add padding inside table cells for spacing */
+  border: 3px solid #ddd; /* Light grey border for table cells */
+}
+
+.receipts-table th {
+  background-color: #007bff; /* Set background color of table headers to blue */
+  font-weight: bold; /* Make header text bold */
+}
+
+.receipts-table td {
+  background-color: #131010; /* Set a dark background color for table data cells */
+}
+
+/* Dark Theme for Receipts Table */
+.dark-theme .receipts-table {
+  color: #ffffff; /* Set default text color to white in dark theme */
+}
+
+.dark-theme .receipts-table th {
+  background-color: #007bff; /* Set blue background color for table headers */
+  color: #0c0202; /* Set header text color to dark red for contrast */
+}
+
+.dark-theme .receipts-table td {
+  background-color: #333333; /* Set dark background color for data cells */
+  color: #ffffff; /* Set text color inside the data cells to white for readability */
+}
+
+/* Light Theme for Receipts Table */
+body.light .receipts-table {
+  color: #000000; /* Default text color is black in light theme */
+}
+
+body.light .receipts-table th {
+  background-color: #007bff; /* Set blue background color for table headers */
+  color: #ffffff; /* Set header text color to white for contrast */
+}
+
+body.light .receipts-table td {
+  background-color: #131010; /* Keep a dark (almost black) background for table data cells */
+  color: #ffffff; /* Set text color inside the data cells to white for visibility */
+}
+
+//* Delete Button Styles */
+.delete-receipt-button {
+  background-color: black; /* Set background color to black for the delete button */
+  color: white; /* Set text color to white for better contrast */
+  border: none; /* Remove default border */
+  padding: 5px 10px; /* Add padding for a more clickable area */
+  cursor: pointer; /* Change cursor to pointer when hovering to indicate it's clickable */
+}
+
+/* Delete Button Hover Effect */
+.delete-receipt-button:hover {
+  background-color: darkred; /* Change background color to dark red when hovered */
+}
+
+/* Style for buttons inside the table cells */
+.receipts-table td button {
+  margin-top: 10px; /* Add space above the buttons to separate from the table cell */
+}
+
+/* Add Receipt Button Styles */
+.add-receipt-button-container {
+  display: flex; /* Use flexbox to arrange the elements in a flexible layout */
+  justify-content: center; /* Center the contents horizontally within the container */
+  margin-top: 20px; /* Add some space above the button container */
+  width: 100%; /* Make the container take the full width of the parent element */
+}
+
+/* Delete Button Styling */
+.delete-button {
+  background-color: black; /* Set the background color of the delete button to black */
+  color: white; /* Set the text color of the delete button to white */
+  border: none; /* Remove the default border of the button */
+  padding: 5px 10px; /* Add padding inside the button */
+  cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
+}
+
+/* Hover Effect for Delete Button */
+.delete-button:hover {
+  background-color: darkred; /* Change the background color to dark red when hovering */
+}
+
+/* Optional: Add a hover effect for rows (if needed) */
+.friends-table tr:hover,
+.my-data-table tr:hover {
+  background-color: #444; /* Change the background color of a row to dark gray when hovered over */
+}
+.trends-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+  justify-content: center; /* Centers content vertically (when applicable) */
+  text-align: center;
+  margin: 20px auto;
+}
+
+.trends-content {
+  width: 100%;
+  max-width: 600px; /* Limit the width for better readability */
+}
+
+.trends-box {
+  border: 1px solid #ccc; /* Adds a border around the box */
+  border-radius: 8px; /* Optional: rounded corners */
+  padding: 20px; /* Adds spacing inside the box */
+  background-color: #f9f9f9; /* Optional: subtle background color */
+  margin-top: 10px; /* Space above the box */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+}
+
+ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+}
+
+li {
+  margin: 10px 0; /* Space between list items */
+}
+body.dark .trends-content {
+  width: 100%;
+  max-width: 600px; /* Limit the width for better readability */
+  color: #ffffff; /* White text for better contrast on a dark background */
+}
+
+body.dark .trends-box {
+  border: 1px solid #444444; /* Darker border color for dark mode */
+  border-radius: 8px; /* Optional: rounded corners */
+  padding: 20px; /* Adds spacing inside the box */
+  background-color: #2c2c2c; /* Dark background color */
+  margin-top: 10px; /* Space above the box */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Stronger shadow for dark mode */
+}
+
+body.dark ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+  color: #e1e1e1; /* Light color for list items */
+}
+
+body.dark li {
+  margin: 10px 0; /* Space between list items */
+  background-color: #333333; /* Slightly lighter background for list items */
+  border-bottom: 1px solid #555555; /* Optional divider between list items */
+  padding: 8px 0; /* Add padding inside list items */
+  color: #ffffff; /* Ensure list item text is white for readability */
+}
+
+.container {
+  min-height: 100vh; /* Ensures the container fills at least the full viewport height */
+  padding-bottom: 100px; /* Adds extra space at the bottom */
+}

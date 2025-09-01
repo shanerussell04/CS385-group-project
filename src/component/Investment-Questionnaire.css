@@ -1,0 +1,79 @@
+/* code written byh Anthony Hayes*/
+/*Comments generated from chat GBT*/
+body,
+html {
+  height: 100%; /* Ensure body and html elements fill the entire viewport */
+  margin: 0; /* Remove default margin */
+}
+
+.investment-questionnaire {
+  background-color: #121212; /* Dark background for the main container */
+  color: #ffffff; /* Light text color for readability */
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  height: 100%; /* Make the container take full height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the content vertically */
+  box-sizing: border-box; /* Make sure padding doesn't affect the width */
+}
+
+.investment-questionnaire h2 {
+  color: #1e90ff; /* Blue color for the heading */
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.investment-questionnaire form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adding space between each question/answer pair */
+}
+
+.investment-questionnaire form div {
+  display: flex;
+  flex-direction: column; /* Stack the label and select vertically */
+  gap: 10px; /* Add space between label and select */
+}
+
+.investment-questionnaire form label {
+  font-weight: bold;
+  font-size: 16px;
+  color: #b0c4de; /* Light blue-gray color for labels */
+}
+
+.investment-questionnaire form select {
+  background-color: #1f1f1f; /* Dark background for dropdowns */
+  color: #ffffff; /* White text color for dropdown options */
+  border: 1px solid #1e90ff; /* Blue border for select */
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.investment-questionnaire form select:focus {
+  border-color: #00bfff; /* Lighter blue border on focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(30, 144, 255, 0.7); /* Blue glow on focus */
+}
+
+button {
+  padding: 12px 25px;
+  background-color: #1e90ff; /* Blue button */
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #00bfff; /* Lighter blue on hover */
+}
